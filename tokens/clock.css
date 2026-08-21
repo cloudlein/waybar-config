@@ -1,0 +1,31 @@
+@import "colors.css";
+
+window#waybar {
+    background: transparent;
+}
+
+/* Background kapsul pil pada overlay cava/jam */
+window#waybar.overlay .modules-center {
+    margin: 4px 0px;
+    padding: 0px 8px;
+    background-color: @surface_container;
+    border-radius: 12px;
+}
+
+/* Jam di foreground */
+#clock {
+    margin: 4px 0px;
+    padding: 2px 0px 0px 0px;
+    background: transparent;
+    color: @secondary_fixed_dim;
+}
+
+/* Cava visualizer */
+#custom-cava {
+    font-size: 20px;
+    color: @primary;
+    opacity: 0.35;
+    background: transparent;
+    margin: 0;
+    padding: 0;
+}

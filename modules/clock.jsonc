@@ -1,0 +1,11 @@
+{
+    "clock": {
+        "timezone": "Asia/Jakarta",
+        "format": "<span size='9pt' weight='bold'> &lt; {:%H:%M} &gt; </span>",
+        "tooltip-format": "<tt><small>{calendar}</small></tt>"
+    },
+    "custom/cava": {
+        "format": "{}",
+        "exec": "$HOME/.config/waybar/scripts/cava.sh"
+    }
+}
