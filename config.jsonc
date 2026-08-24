@@ -1,5 +1,20 @@
 [
     {
+        "name": "overlay",
+        "layer": "top",
+        "position": "top",
+        "height": 30,
+        "margin-top": -30,
+        "exclusive": false,
+        "passthrough": true,
+        "include": [
+            "./modules/clock.jsonc"
+        ],
+        "modules-center": [
+            "custom/cava"
+        ]
+    },
+    {
         "layer": "top",
         "position": "top",
         "height": 30,
@@ -16,21 +31,6 @@
         ],
         "modules-right": [
             "pulseaudio"
-        ]
-    },
-    {
-        "name": "overlay",
-        "layer": "bottom",
-        "position": "top",
-        "height": 30,
-        "margin-top": -30,
-        "exclusive": false,
-        "passthrough": true,
-        "include": [
-            "./modules/clock.jsonc"
-        ],
-        "modules-center": [
-            "custom/cava"
         ]
     }
 ]
