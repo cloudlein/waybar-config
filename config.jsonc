@@ -21,10 +21,12 @@
         "include": [
             "./modules/workspace.jsonc",
             "./modules/clock.jsonc",
-            "./modules/audio.jsonc"
+            "./modules/audio.jsonc",
+            "./modules/music.jsonc"
         ],
         "modules-left": [
-            "hyprland/workspaces"
+            "hyprland/workspaces",
+            "custom/music"
         ],
         "modules-center": [
             "clock"

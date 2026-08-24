@@ -1,0 +1,25 @@
+@import "colors.css";
+
+#custom-music {
+    margin: 5px 0px 1px 6px;
+    padding: 3px 14px 3px 14px;
+    background-color: @surface_container;
+    color: @secondary_fixed_dim;
+    border-radius: 12px;
+    font-size: 13px;
+    font-weight: bold;
+    transition: all 0.2s ease;
+}
+
+#custom-music:hover {
+    background-color: @surface_container_high;
+    color: @primary;
+}
+
+#custom-music.spotify {
+    color: #1ed760;
+}
+
+#custom-music.ytmusic {
+    color: #ff4e45;
+}
