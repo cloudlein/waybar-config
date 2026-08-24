@@ -4,7 +4,6 @@ window#waybar {
     background: transparent;
 }
 
-/* Background kapsul pil pada overlay cava/jam */
 window#waybar.overlay .modules-center {
     margin: 4px 0px;
     padding: 0px 8px;
@@ -12,7 +11,6 @@ window#waybar.overlay .modules-center {
     border-radius: 12px;
 }
 
-/* Jam di foreground */
 #clock {
     margin: 4px 0px;
     padding: 2px 0px 0px 0px;
@@ -20,7 +18,6 @@ window#waybar.overlay .modules-center {
     color: @secondary_fixed_dim;
 }
 
-/* Cava visualizer */
 #custom-cava {
     font-size: 20px;
     color: @primary;

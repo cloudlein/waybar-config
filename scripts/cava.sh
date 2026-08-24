@@ -3,7 +3,6 @@
 bar="▁▂▃▄▅▆▇█"
 dict="s/;//g;"
 
-# creating "dictionary" to replace char with bar
 i=0
 while [ $i -lt ${#bar} ]
 do
@@ -11,7 +10,6 @@ do
     i=$((i=i+1))
 done
 
-# write cava config
 config_file="/tmp/polybar_cava_config"
 echo "
 [general]
@@ -24,7 +22,6 @@ data_format = ascii
 ascii_max_range = 7
 " > $config_file
 
-# read stdout from cava
 cava -p $config_file | while read -r line; do
     echo $line | sed $dict
 done

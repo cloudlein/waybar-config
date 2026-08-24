@@ -1,0 +1,34 @@
+@import "colors.css";
+
+#workspaces {
+    margin: 5px 0px 1px 6px;
+    padding: 0px 4px;
+    background-color: @surface_container;
+    border-radius: 12px;
+}
+
+#workspaces button {
+    padding: 2px 8px;
+    margin: 2px 2px;
+    border-radius: 8px;
+    color: @secondary_fixed_dim;
+    font-size: 13px;
+    font-weight: bold;
+    background: transparent;
+    transition: all 0.2s ease;
+}
+
+#workspaces button:hover {
+    background-color: @surface_container_high;
+    color: @primary;
+}
+
+#workspaces button.active {
+    background-color: @primary;
+    color: @on_primary;
+}
+
+#workspaces button.urgent {
+    background-color: @error;
+    color: @on_error;
+}
