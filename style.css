@@ -3,6 +3,7 @@
 @import "tokens/audio.css";
 @import "tokens/workspace.css";
 @import "tokens/music.css";
+@import "tokens/notification.css";
 
 
 * {

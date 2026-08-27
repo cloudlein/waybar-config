@@ -1,0 +1,7 @@
+{
+    "custom/notification": {
+        "format": "󰂚",
+        "tooltip": false,
+        "on-click": "swaync-client -t"
+    }
+}

@@ -1,6 +1,6 @@
 @import "colors.css";
 
-#pulseaudio {
+#custom-notification {
     margin: 5px 6px 1px 0px;
     padding: 3px 0px;
     min-width: 32px;
@@ -9,9 +9,10 @@
     border-radius: 12px;
     font-size: 13px;
     font-weight: bold;
+    transition: all 0.2s ease;
 }
 
-#pulseaudio.muted {
-    background-color: @surface_container;
-    color: @outline;
+#custom-notification:hover {
+    background-color: @surface_container_high;
+    color: @primary;
 }
