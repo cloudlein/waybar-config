@@ -22,11 +22,11 @@ get_icon() {
 }
 
 # Fetch weather from wttr.in (silent, 5s timeout)
-# Lokasi di-hardcode ke Magelang agar akurat (deteksi IP tidak selalu tepat)
+# Location is hardcoded to Magelang for accuracy (IP-based detection is unreliable)
 DATA=$(curl -sf --max-time 5 "https://wttr.in/Magelang?format=j1" 2>/dev/null)
-# Kalau mau pakai deteksi otomatis berdasarkan IP (tidak akurat):
+# To use automatic detection based on IP (less accurate):
 #   DATA=$(curl -sf --max-time 5 "https://wttr.in/?format=j1" 2>/dev/null)
-# Kalau mau pakai GPS (butuh 'gpspipe' dari paket gpsd):
+# To use GPS coordinates (requires 'gpspipe' from the gpsd package):
 #   LAT=$(gpspipe -w -n 5 2>/dev/null | grep -m1 TPV | python3 -c "import sys,json; d=json.load(sys.stdin); print(d.get('lat',''))" 2>/dev/null)
 #   LON=$(gpspipe -w -n 5 2>/dev/null | grep -m1 TPV | python3 -c "import sys,json; d=json.load(sys.stdin); print(d.get('lon',''))" 2>/dev/null)
 #   DATA=$(curl -sf --max-time 5 "https://wttr.in/${LAT},${LON}?format=j1" 2>/dev/null)

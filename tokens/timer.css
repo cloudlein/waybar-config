@@ -11,7 +11,6 @@
     transition: all 0.2s ease;
 }
 
-/* Tidak ada timer — tampilkan 00:00 dengan warna redup */
 #custom-timer.inactive {
     color: @outline;
     background-color: @surface_container;
@@ -22,23 +21,19 @@
     color: @primary;
 }
 
-/* Timer berjalan: biru */
 #custom-timer.active {
     color: @primary;
 }
 
-/* < 5 menit: kuning */
 #custom-timer.warning {
     color: @tertiary;
 }
 
-/* < 1 menit: merah */
 #custom-timer.urgent {
     color: @error;
     background-color: @error_container;
 }
 
-/* Timer selesai: merah solid */
 #custom-timer.done {
     color: @on_error_container;
     background-color: @error_container;
