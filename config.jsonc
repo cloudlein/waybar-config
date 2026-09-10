@@ -3,8 +3,8 @@
         "name": "overlay",
         "layer": "top",
         "position": "top",
-        "height": 30,
-        "margin-top": -30,
+        "height": 35,
+        "margin-top": -35,
         "exclusive": false,
         "passthrough": true,
         "include": [
@@ -17,13 +17,15 @@
     {
         "layer": "top",
         "position": "top",
-        "height": 30,
+        "height": 35,
         "include": [
             "./modules/workspace.jsonc",
             "./modules/clock.jsonc",
             "./modules/audio.jsonc",
             "./modules/music.jsonc",
-            "./modules/notification.jsonc"
+            "./modules/notification.jsonc",
+            "./modules/weather.jsonc",
+            "./modules/timer.jsonc"
         ],
         "modules-left": [
             "hyprland/workspaces",
@@ -33,6 +35,8 @@
             "clock"
         ],
         "modules-right": [
+            "custom/timer",
+            "custom/weather",
             "pulseaudio",
             "custom/notification"
         ]

@@ -2,7 +2,7 @@
 
 #pulseaudio {
     margin: 5px 6px 1px 0px;
-    padding: 3px 0px;
+    padding: 3px 10px;
     min-width: 32px;
     background-color: @surface_container;
     color: @secondary_fixed_dim;

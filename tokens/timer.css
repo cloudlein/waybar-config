@@ -1,0 +1,45 @@
+@import "colors.css";
+
+#custom-timer {
+    margin: 5px 6px 1px 0px;
+    padding: 3px 10px;
+    background-color: @surface_container;
+    color: @secondary_fixed_dim;
+    border-radius: 12px;
+    font-size: 13px;
+    font-weight: bold;
+    transition: all 0.2s ease;
+}
+
+/* Tidak ada timer — tampilkan 00:00 dengan warna redup */
+#custom-timer.inactive {
+    color: @outline;
+    background-color: @surface_container;
+}
+
+#custom-timer:hover {
+    background-color: @surface_container_high;
+    color: @primary;
+}
+
+/* Timer berjalan: biru */
+#custom-timer.active {
+    color: @primary;
+}
+
+/* < 5 menit: kuning */
+#custom-timer.warning {
+    color: @tertiary;
+}
+
+/* < 1 menit: merah */
+#custom-timer.urgent {
+    color: @error;
+    background-color: @error_container;
+}
+
+/* Timer selesai: merah solid */
+#custom-timer.done {
+    color: @on_error_container;
+    background-color: @error_container;
+}

@@ -1,0 +1,10 @@
+{
+    "custom/timer": {
+        "format": "{}",
+        "return-type": "json",
+        "exec": "~/.config/waybar/scripts/timer.sh",
+        "interval": 1,
+        "tooltip": true,
+        "on-click": "~/.config/waybar/scripts/timer-cancel.sh"
+    }
+}

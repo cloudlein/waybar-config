@@ -4,6 +4,8 @@
 @import "tokens/workspace.css";
 @import "tokens/music.css";
 @import "tokens/notification.css";
+@import "tokens/weather.css";
+@import "tokens/timer.css";
 
 
 * {
