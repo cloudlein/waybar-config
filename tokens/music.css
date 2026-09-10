@@ -23,3 +23,9 @@
 #custom-music.ytmusic {
     color: #ff4e45;
 }
+
+#custom-music.idle {
+    color: @outline;
+    font-style: italic;
+    opacity: 0.6;
+}
