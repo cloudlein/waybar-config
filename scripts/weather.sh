@@ -23,7 +23,7 @@ get_icon() {
 
 # Fetch weather from wttr.in (silent, 5s timeout)
 # Location is hardcoded to Magelang for accuracy (IP-based detection is unreliable)
-DATA=$(curl -sf --max-time 5 "https://wttr.in/Magelang?format=j1" 2>/dev/null)
+DATA=$(curl -sf --max-time 5 "https://wttr.in/-7.482000,110.215167?format=j1" 2>/dev/null)
 # To use automatic detection based on IP (less accurate):
 #   DATA=$(curl -sf --max-time 5 "https://wttr.in/?format=j1" 2>/dev/null)
 # To use GPS coordinates (requires 'gpspipe' from the gpsd package):

@@ -25,6 +25,7 @@
             "./modules/music.jsonc",
             "./modules/notification.jsonc",
             "./modules/weather.jsonc",
+            "./modules/prayer.jsonc",
             "./modules/timer.jsonc"
         ],
         "modules-left": [
@@ -36,6 +37,7 @@
         ],
         "modules-right": [
             "custom/timer",
+            "custom/prayer",
             "custom/weather",
             "pulseaudio",
             "custom/notification"

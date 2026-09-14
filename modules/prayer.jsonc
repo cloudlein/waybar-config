@@ -1,0 +1,10 @@
+{
+    "custom/prayer": {
+        "format": "{}",
+        "return-type": "json",
+        "exec": "~/.config/waybar/scripts/prayer.sh",
+        "interval": 1,
+        "tooltip": true,
+        "on-click": "xdg-open https://www.jadwalsholat.org/adzan/monthly.php?kotaId=419"
+    }
+}
