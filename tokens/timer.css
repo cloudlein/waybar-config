@@ -1,7 +1,7 @@
 @import "colors.css";
 
 #custom-timer {
-    margin: 5px 6px 1px 0px;
+    margin: 5px 0px 1px 6px;
     padding: 3px 10px;
     background-color: @surface_container;
     color: @secondary_fixed_dim;

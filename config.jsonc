@@ -26,17 +26,19 @@
             "./modules/notification.jsonc",
             "./modules/weather.jsonc",
             "./modules/prayer.jsonc",
-            "./modules/timer.jsonc"
+            "./modules/timer.jsonc",
+            "./modules/temperature.jsonc"
         ],
         "modules-left": [
             "hyprland/workspaces",
+            "custom/timer",
             "custom/music"
         ],
         "modules-center": [
             "clock"
         ],
         "modules-right": [
-            "custom/timer",
+            "custom/temperature",
             "custom/prayer",
             "custom/weather",
             "pulseaudio",

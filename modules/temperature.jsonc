@@ -1,0 +1,10 @@
+{
+    "custom/temperature": {
+        "format": "{}",
+        "return-type": "json",
+        "exec": "~/.config/waybar/scripts/temperature.sh text",
+        "interval": 2,
+        "tooltip": true,
+        "on-click": "kitty -e htop"
+    }
+}
